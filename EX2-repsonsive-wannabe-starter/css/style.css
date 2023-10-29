@@ -129,3 +129,50 @@ img {
  ************************************************/
 
 
+/* Tablet (768px in giù) */
+/* Tablet (768px in giù) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Riduci i margini laterali */
+    }
+
+    .steps {
+        /* margin: 2rem 0; Aggiungi il margine come desiderato */
+        /* padding: 2rem 0; Aggiungi il padding come desiderato */
+        color: #232946;
+        background: #eebbc3;
+    }
+
+}
+
+/* Mobile (480px in giù) */
+@media (max-width: 480px) {
+    .col {  
+        width: 100%; /* Rendi gli elementi singoli */
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .steps .col,
+    .lessons .col {
+        width: 100%; /* Rendi gli elementi singoli */
+        margin-bottom: 2rem;
+    }
+
+    .steps .col img,
+    .lessons .col img {
+        height: auto; /* Assicurati che le immagini siano scalabili */
+    }
+
+    /* Aggiungi stili per incolonnare gli eventi */
+    .lessons .row,
+    .steps .row {
+        flex-direction: column;
+    }
+
+    .lessons .col,
+    .steps .col {
+        flex: 100%; /* Assicurati che gli elementi occupino l'intera larghezza */
+    }
+}
+
